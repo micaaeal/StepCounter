@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    __weak IBOutlet UILabel *lblStepCount;
+    
+    __weak IBOutlet UIButton *btStart;
+    __weak IBOutlet UIButton *btStop;
+}
+
+- (IBAction)actionStart:(id)sender;
+- (IBAction)actionStop:(id)sender;
 
 @end

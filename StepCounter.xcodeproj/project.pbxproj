@@ -19,6 +19,8 @@
 		39604170167982D400B53D66 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3960416E167982D400B53D66 /* MainStoryboard_iPhone.storyboard */; };
 		39604173167982D400B53D66 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39604171167982D400B53D66 /* MainStoryboard_iPad.storyboard */; };
 		39604176167982D400B53D66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39604175167982D400B53D66 /* ViewController.m */; };
+		39604189167DC14300B53D66 /* Pedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 39604188167DC14300B53D66 /* Pedometer.m */; };
+		39604194167E010D00B53D66 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39604193167E010D00B53D66 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		39604172167982D400B53D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		39604174167982D400B53D66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		39604175167982D400B53D66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39604187167DC14200B53D66 /* Pedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pedometer.h; sourceTree = "<group>"; };
+		39604188167DC14300B53D66 /* Pedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pedometer.m; sourceTree = "<group>"; };
+		39604193167E010D00B53D66 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39604194167E010D00B53D66 /* CoreMotion.framework in Frameworks */,
 				39604157167982D400B53D66 /* UIKit.framework in Frameworks */,
 				39604159167982D400B53D66 /* Foundation.framework in Frameworks */,
 				3960415B167982D400B53D66 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		39604155167982D400B53D66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39604193167E010D00B53D66 /* CoreMotion.framework */,
 				39604156167982D400B53D66 /* UIKit.framework */,
 				39604158167982D400B53D66 /* Foundation.framework */,
 				3960415A167982D400B53D66 /* CoreGraphics.framework */,
@@ -92,6 +99,8 @@
 				39604174167982D400B53D66 /* ViewController.h */,
 				39604175167982D400B53D66 /* ViewController.m */,
 				3960415D167982D400B53D66 /* Supporting Files */,
+				39604187167DC14200B53D66 /* Pedometer.h */,
+				39604188167DC14300B53D66 /* Pedometer.m */,
 			);
 			path = StepCounter;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 				39604163167982D400B53D66 /* main.m in Sources */,
 				39604167167982D400B53D66 /* AppDelegate.m in Sources */,
 				39604176167982D400B53D66 /* ViewController.m in Sources */,
+				39604189167DC14300B53D66 /* Pedometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StepCounter/StepCounter-Prefix.pch";
 				INFOPLIST_FILE = "StepCounter/StepCounter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StepCounter/StepCounter-Prefix.pch";
 				INFOPLIST_FILE = "StepCounter/StepCounter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,6 +317,7 @@
 				3960417B167982D400B53D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
